@@ -8,9 +8,10 @@
 
 *   filter_skip
 
-
+`
     
     //  src/app/index.filters.js
+   
     
     (function () {
     'use strict';
@@ -54,7 +55,6 @@
                 <td class="text-right">{{p.price | currency }}</td>
             </tr>
         .....
-            `
-
+`
 
 
