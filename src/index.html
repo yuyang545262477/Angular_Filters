@@ -37,8 +37,8 @@
         </thead>
         <tbody>
         <tr ng-repeat="p in main.data">
-            <td>{{p.name }}</td>
-            <td>{{p.category}}</td>
+            <td>{{p.name|labelCase }}</td>
+            <td>{{p.category|labelCase:true}}</td>
             <td>{{p.expiry}}</td>
             <td class="text-right">{{p.price | currency }}</td>
         </tr>
