@@ -36,7 +36,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="p in main.data">
+        <tr ng-repeat="p in main.data|limitTo:5|skip:2">
             <td>{{p.name|labelCase }}</td>
             <td>{{p.category|labelCase:true}}</td>
             <td>{{p.expiry}}</td>

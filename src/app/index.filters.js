@@ -1,7 +1,18 @@
 (function () {
     'use strict';
-    angular.module("webstorm")
-    .filter("labelCase", labelCase);
+    angular.module('webstorm')
+    .filter('labelCase', labelCase)
+    .filter('skip', skip);
+    
+    function skip() {
+        return function (data, count) {
+            if (angular.isArray(data) && angular.isNumber(count)) {
+                return count > data.length || count < 1 ? data : data.slice(count);
+            } else {
+                return data;
+            }
+        }
+    }
     
     function labelCase() {
 // worker function
