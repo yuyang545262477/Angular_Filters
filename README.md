@@ -8,9 +8,11 @@
 
 *   filter_skip
 
-
+`
+    
     //  src/app/index.filters.js
-     
+   
+    
     (function () {
     'use strict';
     angular.module('webstorm')
@@ -52,7 +54,8 @@
                 <td>{{p.expiry}}</td>
                 <td class="text-right">{{p.price | currency }}</td>
             </tr>
-        .....    
+        .....
+            `
 
 
 
